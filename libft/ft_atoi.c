@@ -1,27 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/07 15:06:58 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/11 11:55:48 by mehaslan         ###   ########.fr       */
+/*   Created: 2026/08/10 18:05:03 by mehaslan          #+#    #+#             */
+/*   Updated: 2026/08/10 19:13:26 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+int ft_atoi(const char *nptr)
 {
-    int i;
+    unsigned char *s;
+    int	i;
+	int	sign;
+	size_t	nbr;
 
-    i = 0;
-    while (*s != (char)c)
-    {
-        if(!*s)
-            return(NULL);
-        s++;
+	i = 0;
+	sign = 1;
+	nbr = 0;
+    s = (unsigned char *)nptr;
+	while (s[i] == ' ' || (s[i] >= 9 && s[i] <= 13))
+	{
+		i++;
+	}
+	if (s[i] == '+' || s[i] == '-')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+        i++;
     }
-    return((char *)s);
+	while (s[i] >= '0' && s[i] <= '9')
+	{
+		nbr = (nbr * 10) + (s[i] - '0');
+		i++;
+	}
+	return (nbr * sign);
 }

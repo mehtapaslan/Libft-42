@@ -6,11 +6,11 @@
 /*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:57:58 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/04 12:25:10 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/10 20:44:03 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_isalpha(int c)
 {
-    return(c <= 'z' && c >= 'a' || c <= 'Z' && c >= 'A');
+    return((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'));
 }

@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/07 15:06:58 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/11 11:55:48 by mehaslan         ###   ########.fr       */
+/*   Created: 2026/08/11 12:09:05 by mehaslan          #+#    #+#             */
+/*   Updated: 2026/08/11 14:53:44 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    int i;
+    char *ptr;
+    size_t max;
 
-    i = 0;
-    while (*s != (char)c)
-    {
-        if(!*s)
-            return(NULL);
-        s++;
-    }
-    return((char *)s);
+    if(!s)
+        return(NULL);
+    if (start >= ft_strlen(s))
+        return (ft_strdup(""));
+    max = ft_strlen(&s[start]);
+    if (max < len)
+        len = max;
+    ptr = malloc(len + 1);
+    if(!ptr)
+        return(NULL);
+    ft_memcpy(ptr, &s[start], len);
+    ptr[len] = '\0';
+    return(ptr);
 }

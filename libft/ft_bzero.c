@@ -6,7 +6,7 @@
 /*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 13:33:44 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/07 17:37:15 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/10 20:39:09 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,3 +15,4 @@ void ft_bzero(void *s, size_t n)
 {
     ft_memset(s, 0, n);
 }
+

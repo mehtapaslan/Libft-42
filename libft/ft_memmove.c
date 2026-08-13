@@ -6,7 +6,7 @@
 /*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 20:10:53 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/08 18:09:55 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/10 21:53:39 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     else if (temp_dest > temp_src)
     {
         while(n--)
-            *(temp_dest + n) = *(temp_src + n);
+            *(temp_dest + n) = *(temp_src + n); 
     }
     return(dest);
 }

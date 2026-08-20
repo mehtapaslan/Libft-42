@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 13:33:44 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/18 17:00:48 by mehaslan         ###   ########.fr       */
+/*   Created: 2026/08/17 15:31:59 by mehaslan          #+#    #+#             */
+/*   Updated: 2026/08/18 17:50:01 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_putchar_fd(char c, int fd)
 {
-	ft_memset(s, 0, n);
+	write(fd, &c, 1);
 }

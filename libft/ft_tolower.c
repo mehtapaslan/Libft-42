@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 15:02:03 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/07 15:05:47 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/18 17:51:10 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if(c <= 'Z' && c >= 'A')
-        return(c + 32);
-    return(c);
+	if (c <= 'Z' && c >= 'A')
+		return (c + 32);
+	return (c);
 }

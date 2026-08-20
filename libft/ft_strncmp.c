@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 18:22:19 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/07 19:34:26 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/18 17:50:45 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    size_t	i;
+	size_t	i;
 
 	i = 0;
 	if (n == 0)

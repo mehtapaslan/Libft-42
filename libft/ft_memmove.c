@@ -3,33 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 20:10:53 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/10 21:53:39 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/19 16:36:27 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-    unsigned char *temp_src;
-    unsigned char *temp_dest;
+	unsigned char	*temp_src;
+	unsigned char	*temp_dest;
 
-    if (!dest && !src)
+	if (!dest || !src)
 		return (NULL);
-
-    temp_src = (unsigned char *)src;
-    temp_dest = (unsigned char *)dest;
-
-    if (temp_dest < temp_src)
-        ft_memcpy(dest, src, n);
-
-    else if (temp_dest > temp_src)
-    {
-        while(n--)
-            *(temp_dest + n) = *(temp_src + n); 
-    }
-    return(dest);
+	temp_src = (unsigned char *)src;
+	temp_dest = (unsigned char *)dest;
+	if (temp_dest < temp_src)
+		ft_memcpy(dest, src, n);
+	else if (temp_dest > temp_src)
+	{
+		while (n--)
+			*(temp_dest + n) = *(temp_src + n);
+	}
+	return (dest);
 }

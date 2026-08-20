@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 19:02:31 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/10 20:45:09 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/18 17:01:06 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int a)
+int	ft_isdigit(int a)
 {
-    return(a <= '9' && a >= '0');
+	return (a <= '9' && a >= '0');
 }

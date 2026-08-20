@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 13:33:44 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/18 17:00:48 by mehaslan         ###   ########.fr       */
+/*   Created: 2026/08/18 15:40:46 by mehaslan          #+#    #+#             */
+/*   Updated: 2026/08/18 17:49:33 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	ft_memset(s, 0, n);
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

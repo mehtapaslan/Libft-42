@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 19:59:30 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/03 20:02:46 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/18 17:01:02 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int a)
+int	ft_isascii(int a)
 {
-    return(a >= 0 && a <= 127);
+	return (a >= 0 && a <= 127);
 }

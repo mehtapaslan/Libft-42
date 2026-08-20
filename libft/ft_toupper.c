@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 14:54:54 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/07 15:02:11 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/18 17:51:14 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if(c <= 'z' && c >= 'a')
-        return(c - 32);
-    return(c);
+	if (c <= 'z' && c >= 'a')
+		return (c - 32);
+	return (c);
 }

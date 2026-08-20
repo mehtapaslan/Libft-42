@@ -3,25 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mehaslan@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 15:06:58 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/11 11:55:48 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/18 17:50:17 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    int i;
-
-    i = 0;
-    while (*s != (char)c)
-    {
-        if(!*s)
-            return(NULL);
-        s++;
-    }
-    return((char *)s);
+	while (*s != (char)c)
+	{
+		if (!*s)
+			return (NULL);
+		s++;
+	}
+	return ((char *)s);
 }

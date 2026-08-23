@@ -6,13 +6,13 @@
 /*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 13:52:49 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/18 17:49:30 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/21 16:55:46 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_tostring(int length, int sign, long n)
+static char	*ft_tostring(int length, int sign, long n)
 {
 	char	*str;
 

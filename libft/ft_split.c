@@ -6,13 +6,13 @@
 /*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 14:02:11 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/18 17:50:12 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/21 16:55:22 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_word_counter(char const *s, char delimiter)
+static int	ft_word_counter(char const *s, char delimiter)
 {
 	unsigned int	word;
 
@@ -31,7 +31,7 @@ int	ft_word_counter(char const *s, char delimiter)
 	return (word);
 }
 
-void	*ft_free_array(char **result, int index)
+static void	*ft_free_array(char **result, int index)
 {
 	int	i;
 
@@ -45,7 +45,7 @@ void	*ft_free_array(char **result, int index)
 	return (NULL);
 }
 
-char	**ft_fill(char const *s, char **result, char c)
+static char	**ft_fill(char const *s, char **result, char c)
 {
 	int	i;
 	int	index;

@@ -6,16 +6,14 @@
 /*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 18:05:03 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/18 17:00:38 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/25 18:44:42 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
 	unsigned char	*s;
-	size_t			nbr;
+	int				nbr;
 	int				sign;
 	int				i;
 

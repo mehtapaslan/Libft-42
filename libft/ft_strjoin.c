@@ -6,7 +6,7 @@
 /*   By: mehaslan <mehaslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 16:30:14 by mehaslan          #+#    #+#             */
-/*   Updated: 2026/08/18 17:50:26 by mehaslan         ###   ########.fr       */
+/*   Updated: 2026/08/25 16:51:04 by mehaslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned int	len;
-	unsigned int	i;
+	size_t			len;
+	size_t			i;
 	char			*str;
 
 	i = 0;

@@ -12,19 +12,7 @@
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-
-//#include <fcntl.h>
-//int main()
-//{
-//	int fd;
-
-//	fd = open("mehtap.txt", O_RDWR | O_CREAT | O_TRUNC, 0777);
-
-//	ft_putchar_fd('d', fd);
-	
-//}
-

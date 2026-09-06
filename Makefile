@@ -10,16 +10,19 @@ SRC = ft_isalpha.c ft_strlen.c ft_bzero.c ft_isalnum.c ft_isascii.c ft_isdigit.c
 		ft_putstr_fd.c ft_lstadd_front.c ft_lstnew.c ft_lstsize.c\
 		ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
 		ft_lstclear.c ft_lstmap.c ft_lstiter.c
-OBJS = $(SRC:.c=.o)
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
+
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(OBJ)
+
 fclean: clean
 	rm -rf $(NAME)
+
 re: fclean all
 
 .PHONY: all clean fclean re

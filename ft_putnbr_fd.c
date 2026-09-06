@@ -12,13 +12,13 @@
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	int	a;
 
 	if (n == -2147483648)
 	{
-		write (fd, "-2147483648", 11);
+		write(fd, "-2147483648", 11);
 		return ;
 	}
 	if (n < 0)

@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if(c <= 'z' && c >= 'a')
-        return(c - 32);
-    return(c);
+	if (c <= 'z' && c >= 'a')
+		return (c - 32);
+	return (c);
 }

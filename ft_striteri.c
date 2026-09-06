@@ -10,34 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned int i;
-	
-	if(!s || !f)
+	unsigned int	i;
+
+	if (!s || !f)
 		return ;
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		f(i, &s[i]);
 		i++;
 	}
-	return ;
 }
-
-//void function(unsigned int i, char *c)
-//{
-//	(void)i;
-//	*c = *c + 1;
-//}
-
-//#include <stdio.h>
-//int main()
-//{
-//	char s[] = "abcd";
-//	ft_striteri(s, function);
-	
-//	printf("%s", s);
-//}
